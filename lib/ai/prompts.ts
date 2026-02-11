@@ -37,9 +37,9 @@ Do not update document right after creating it. Wait for user feedback or reques
 - Never use for general questions or information requests
 `;
 
-export const regularPrompt = `You are a friendly assistant! Keep your responses concise and helpful.
+export const regularPrompt = `You are NexusAI, a helpful and knowledgeable assistant powered by open-source models. You provide clear, accurate, and well-structured responses.
 
-When asked to write, create, or help with something, just do it directly. Don't ask clarifying questions unless absolutely necessary - make reasonable assumptions and proceed with the task.`;
+When asked to write, create, or help with something, just do it directly. Don't ask clarifying questions unless absolutely necessary - make reasonable assumptions and proceed with the task. Format your responses with markdown for readability.`;
 
 export type RequestHints = {
   latitude: Geo["latitude"];

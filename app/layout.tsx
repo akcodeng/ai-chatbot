@@ -8,8 +8,9 @@ import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chat.vercel.ai"),
-  title: "Next.js Chatbot Template",
-  description: "Next.js chatbot template using the AI SDK.",
+  title: "NexusAI - Multi-Provider AI Chat",
+  description:
+    "A premium AI chat experience powered by Groq, Cloudflare Workers AI, and Nebius. Lightning-fast responses with multiple open-source models.",
 };
 
 export const viewport = {
@@ -28,8 +29,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
-const LIGHT_THEME_COLOR = "hsl(0 0% 100%)";
-const DARK_THEME_COLOR = "hsl(240deg 10% 3.92%)";
+const LIGHT_THEME_COLOR = "hsl(210 20% 98%)";
+const DARK_THEME_COLOR = "hsl(222 25% 7%)";
 const THEME_COLOR_SCRIPT = `\
 (function() {
   var html = document.documentElement;
@@ -74,7 +75,7 @@ export default function RootLayout({
       <body className="antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           disableTransitionOnChange
           enableSystem
         >
