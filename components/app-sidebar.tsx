@@ -65,22 +65,37 @@ export function AppSidebar({ user }: { user: User | undefined }) {
           <SidebarMenu>
             <div className="flex flex-row items-center justify-between">
               <Link
-                className="flex flex-row items-center gap-3"
+                className="flex flex-row items-center gap-2.5"
                 href="/"
                 onClick={() => {
                   setOpenMobile(false);
                 }}
               >
-                <span className="cursor-pointer rounded-md px-2 font-semibold text-lg hover:bg-muted">
-                  Chatbot
+                <div className="flex size-8 items-center justify-center rounded-lg bg-primary/10">
+                  <svg
+                    className="size-4 text-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5" />
+                    <path d="M2 12l10 5 10-5" />
+                  </svg>
+                </div>
+                <span className="cursor-pointer font-semibold text-base text-foreground tracking-tight">
+                  NexusAI
                 </span>
               </Link>
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row gap-0.5">
                 {user && (
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Button
-                        className="h-8 p-1 md:h-fit md:p-2"
+                        className="size-8 rounded-lg p-0 text-muted-foreground hover:text-foreground"
                         onClick={() => setShowDeleteAllDialog(true)}
                         type="button"
                         variant="ghost"
@@ -96,7 +111,7 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button
-                      className="h-8 p-1 md:h-fit md:p-2"
+                      className="size-8 rounded-lg p-0 text-muted-foreground hover:text-foreground"
                       onClick={() => {
                         setOpenMobile(false);
                         router.push("/");
@@ -119,7 +134,9 @@ export function AppSidebar({ user }: { user: User | undefined }) {
         <SidebarContent>
           <SidebarHistory user={user} />
         </SidebarContent>
-        <SidebarFooter>{user && <SidebarUserNav user={user} />}</SidebarFooter>
+        <SidebarFooter>
+          {user && <SidebarUserNav user={user} />}
+        </SidebarFooter>
       </Sidebar>
 
       <AlertDialog
@@ -130,8 +147,8 @@ export function AppSidebar({ user }: { user: User | undefined }) {
           <AlertDialogHeader>
             <AlertDialogTitle>Delete all chats?</AlertDialogTitle>
             <AlertDialogDescription>
-              This action cannot be undone. This will permanently delete all
-              your chats and remove them from our servers.
+              This action cannot be undone. This will permanently delete all your
+              chats and remove them from our servers.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

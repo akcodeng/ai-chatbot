@@ -1,5 +1,4 @@
-// Curated list of top models from Vercel AI Gateway
-export const DEFAULT_CHAT_MODEL = "google/gemini-2.5-flash-lite";
+export const DEFAULT_CHAT_MODEL = "groq/llama-3.3-70b-versatile";
 
 export type ChatModel = {
   id: string;
@@ -9,70 +8,86 @@ export type ChatModel = {
 };
 
 export const chatModels: ChatModel[] = [
-  // Anthropic
+  // Groq Models
   {
-    id: "anthropic/claude-haiku-4.5",
-    name: "Claude Haiku 4.5",
-    provider: "anthropic",
-    description: "Fast and affordable, great for everyday tasks",
+    id: "groq/llama-3.3-70b-versatile",
+    name: "Llama 3.3 70B",
+    provider: "groq",
+    description: "Fast and powerful, great for complex tasks",
   },
   {
-    id: "anthropic/claude-sonnet-4.5",
-    name: "Claude Sonnet 4.5",
-    provider: "anthropic",
-    description: "Best balance of speed, intelligence, and cost",
+    id: "groq/llama-3.1-8b-instant",
+    name: "Llama 3.1 8B",
+    provider: "groq",
+    description: "Ultra-fast responses for simple tasks",
   },
   {
-    id: "anthropic/claude-opus-4.5",
-    name: "Claude Opus 4.5",
-    provider: "anthropic",
-    description: "Most capable Anthropic model",
-  },
-  // OpenAI
-  {
-    id: "openai/gpt-4.1-mini",
-    name: "GPT-4.1 Mini",
-    provider: "openai",
-    description: "Fast and cost-effective for simple tasks",
+    id: "groq/mixtral-8x7b-32768",
+    name: "Mixtral 8x7B",
+    provider: "groq",
+    description: "Strong mixture-of-experts model with 32K context",
   },
   {
-    id: "openai/gpt-5.2",
-    name: "GPT-5.2",
-    provider: "openai",
-    description: "Most capable OpenAI model",
-  },
-  // Google
-  {
-    id: "google/gemini-2.5-flash-lite",
-    name: "Gemini 2.5 Flash Lite",
-    provider: "google",
-    description: "Ultra fast and affordable",
+    id: "groq/gemma2-9b-it",
+    name: "Gemma 2 9B",
+    provider: "groq",
+    description: "Google's efficient open model via Groq",
   },
   {
-    id: "google/gemini-3-pro-preview",
-    name: "Gemini 3 Pro",
-    provider: "google",
-    description: "Most capable Google model",
+    id: "groq/deepseek-r1-distill-llama-70b",
+    name: "DeepSeek R1 70B",
+    provider: "groq",
+    description: "Reasoning model for complex problem solving",
   },
-  // xAI
+  // Cloudflare Workers AI Models
   {
-    id: "xai/grok-4.1-fast-non-reasoning",
-    name: "Grok 4.1 Fast",
-    provider: "xai",
-    description: "Fast with 30K context",
-  },
-  // Reasoning models (extended thinking)
-  {
-    id: "anthropic/claude-3.7-sonnet-thinking",
-    name: "Claude 3.7 Sonnet",
-    provider: "reasoning",
-    description: "Extended thinking for complex problems",
+    id: "cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    name: "Llama 3.3 70B",
+    provider: "cloudflare",
+    description: "Meta's flagship model on Cloudflare edge",
   },
   {
-    id: "xai/grok-code-fast-1-thinking",
-    name: "Grok Code Fast",
-    provider: "reasoning",
-    description: "Reasoning optimized for code",
+    id: "cloudflare/@cf/meta/llama-3.1-8b-instruct",
+    name: "Llama 3.1 8B",
+    provider: "cloudflare",
+    description: "Fast edge inference with low latency",
+  },
+  {
+    id: "cloudflare/@cf/mistral/mistral-7b-instruct-v0.1",
+    name: "Mistral 7B",
+    provider: "cloudflare",
+    description: "Efficient model for quick tasks",
+  },
+  {
+    id: "cloudflare/@cf/qwen/qwen1.5-14b-chat-awq",
+    name: "Qwen 1.5 14B",
+    provider: "cloudflare",
+    description: "Strong multilingual capabilities",
+  },
+  // Nebius AI Studio Models
+  {
+    id: "nebius/meta-llama/Meta-Llama-3.1-70B-Instruct",
+    name: "Llama 3.1 70B",
+    provider: "nebius",
+    description: "High-quality reasoning and generation",
+  },
+  {
+    id: "nebius/meta-llama/Meta-Llama-3.1-8B-Instruct",
+    name: "Llama 3.1 8B",
+    provider: "nebius",
+    description: "Fast and cost-effective inference",
+  },
+  {
+    id: "nebius/mistralai/Mixtral-8x22B-Instruct-v0.1",
+    name: "Mixtral 8x22B",
+    provider: "nebius",
+    description: "Powerful mixture-of-experts model",
+  },
+  {
+    id: "nebius/Qwen/Qwen2.5-72B-Instruct",
+    name: "Qwen 2.5 72B",
+    provider: "nebius",
+    description: "Top-tier multilingual open model",
   },
 ];
 
