@@ -12,82 +12,82 @@
 @plugin "@tailwindcss/typography";
 
 /* ========================================
-   DESIGN TOKENS - Premium Dark-First Theme
+   IMOOGLE AI - Claude-Inspired Warm Theme
    ======================================== */
 
-/* Light mode */
+/* Light mode - warm cream aesthetic */
 :root {
-  --background: hsl(210 20% 98%);
-  --foreground: hsl(220 20% 10%);
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(220 20% 10%);
-  --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(220 20% 10%);
-  --primary: hsl(175 70% 38%);
+  --background: hsl(30 25% 97%);
+  --foreground: hsl(25 10% 15%);
+  --card: hsl(30 20% 99%);
+  --card-foreground: hsl(25 10% 15%);
+  --popover: hsl(30 20% 99%);
+  --popover-foreground: hsl(25 10% 15%);
+  --primary: hsl(24 70% 45%);
   --primary-foreground: hsl(0 0% 100%);
-  --secondary: hsl(210 15% 93%);
-  --secondary-foreground: hsl(220 20% 10%);
-  --muted: hsl(210 15% 93%);
-  --muted-foreground: hsl(220 10% 46%);
-  --accent: hsl(175 70% 38%);
-  --accent-foreground: hsl(0 0% 100%);
-  --destructive: hsl(0 72% 51%);
+  --secondary: hsl(30 15% 93%);
+  --secondary-foreground: hsl(25 10% 15%);
+  --muted: hsl(30 12% 92%);
+  --muted-foreground: hsl(25 8% 48%);
+  --accent: hsl(30 15% 93%);
+  --accent-foreground: hsl(25 10% 15%);
+  --destructive: hsl(0 65% 51%);
   --destructive-foreground: hsl(0 0% 100%);
-  --border: hsl(210 15% 88%);
-  --input: hsl(210 15% 88%);
-  --ring: hsl(175 70% 38%);
-  --chart-1: hsl(175 70% 38%);
-  --chart-2: hsl(200 65% 45%);
-  --chart-3: hsl(220 55% 50%);
-  --chart-4: hsl(150 55% 45%);
-  --chart-5: hsl(30 80% 55%);
-  --sidebar-background: hsl(210 20% 96%);
-  --sidebar-foreground: hsl(220 15% 30%);
-  --sidebar-primary: hsl(175 70% 38%);
+  --border: hsl(30 12% 87%);
+  --input: hsl(30 12% 87%);
+  --ring: hsl(24 70% 45%);
+  --chart-1: hsl(24 70% 45%);
+  --chart-2: hsl(35 60% 50%);
+  --chart-3: hsl(15 55% 45%);
+  --chart-4: hsl(45 55% 50%);
+  --chart-5: hsl(10 65% 50%);
+  --sidebar-background: hsl(30 18% 95%);
+  --sidebar-foreground: hsl(25 10% 30%);
+  --sidebar-primary: hsl(24 70% 45%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(210 15% 91%);
-  --sidebar-accent-foreground: hsl(220 20% 10%);
-  --sidebar-border: hsl(210 15% 88%);
-  --sidebar-ring: hsl(175 70% 38%);
+  --sidebar-accent: hsl(30 12% 91%);
+  --sidebar-accent-foreground: hsl(25 10% 15%);
+  --sidebar-border: hsl(30 12% 88%);
+  --sidebar-ring: hsl(24 70% 45%);
   --radius: 0.625rem;
-  --sidebar: hsl(210 20% 96%);
+  --sidebar: hsl(30 18% 95%);
 }
 
-/* Dark mode - primary aesthetic */
+/* Dark mode - warm dark */
 .dark {
-  --background: hsl(222 25% 7%);
-  --foreground: hsl(210 20% 95%);
-  --card: hsl(222 22% 10%);
-  --card-foreground: hsl(210 20% 95%);
-  --popover: hsl(222 22% 10%);
-  --popover-foreground: hsl(210 20% 95%);
-  --primary: hsl(175 75% 45%);
-  --primary-foreground: hsl(222 25% 7%);
-  --secondary: hsl(222 18% 14%);
-  --secondary-foreground: hsl(210 20% 90%);
-  --muted: hsl(222 18% 14%);
-  --muted-foreground: hsl(220 12% 55%);
-  --accent: hsl(175 75% 45%);
-  --accent-foreground: hsl(222 25% 7%);
-  --destructive: hsl(0 62% 50%);
+  --background: hsl(25 15% 8%);
+  --foreground: hsl(30 15% 90%);
+  --card: hsl(25 12% 11%);
+  --card-foreground: hsl(30 15% 90%);
+  --popover: hsl(25 12% 11%);
+  --popover-foreground: hsl(30 15% 90%);
+  --primary: hsl(24 75% 50%);
+  --primary-foreground: hsl(25 15% 8%);
+  --secondary: hsl(25 10% 15%);
+  --secondary-foreground: hsl(30 12% 85%);
+  --muted: hsl(25 10% 15%);
+  --muted-foreground: hsl(25 8% 52%);
+  --accent: hsl(25 10% 15%);
+  --accent-foreground: hsl(30 12% 85%);
+  --destructive: hsl(0 60% 48%);
   --destructive-foreground: hsl(0 0% 100%);
-  --border: hsl(222 15% 16%);
-  --input: hsl(222 15% 16%);
-  --ring: hsl(175 75% 45%);
-  --chart-1: hsl(175 75% 45%);
-  --chart-2: hsl(200 70% 50%);
-  --chart-3: hsl(30 80% 55%);
-  --chart-4: hsl(280 65% 60%);
-  --chart-5: hsl(340 75% 55%);
-  --sidebar-background: hsl(222 25% 6%);
-  --sidebar-foreground: hsl(210 15% 75%);
-  --sidebar-primary: hsl(175 75% 45%);
-  --sidebar-primary-foreground: hsl(222 25% 7%);
-  --sidebar-accent: hsl(222 18% 12%);
-  --sidebar-accent-foreground: hsl(210 20% 90%);
-  --sidebar-border: hsl(222 15% 14%);
-  --sidebar-ring: hsl(175 75% 45%);
-  --sidebar: hsl(222 25% 6%);
+  --border: hsl(25 10% 17%);
+  --input: hsl(25 10% 17%);
+  --ring: hsl(24 75% 50%);
+  --chart-1: hsl(24 75% 50%);
+  --chart-2: hsl(35 65% 55%);
+  --chart-3: hsl(15 50% 48%);
+  --chart-4: hsl(45 50% 55%);
+  --chart-5: hsl(10 60% 50%);
+  --sidebar-background: hsl(25 15% 7%);
+  --sidebar-foreground: hsl(30 10% 70%);
+  --sidebar-primary: hsl(24 75% 50%);
+  --sidebar-primary-foreground: hsl(25 15% 8%);
+  --sidebar-accent: hsl(25 10% 13%);
+  --sidebar-accent-foreground: hsl(30 12% 85%);
+  --sidebar-border: hsl(25 10% 15%);
+  --sidebar-ring: hsl(24 75% 50%);
+  --sidebar: hsl(25 15% 7%);
 }
 
 /* Theme mapping */
@@ -202,7 +202,7 @@
 
 .cm-editor,
 .cm-gutters {
-  @apply bg-background! dark:bg-[hsl(222,22%,10%)]! outline-hidden! selection:bg-primary/20!;
+  @apply bg-background! dark:bg-[hsl(25,12%,11%)]! outline-hidden! selection:bg-primary/20!;
 }
 
 .ͼo.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground,
@@ -238,8 +238,8 @@
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -248,12 +248,11 @@
 
 ::-webkit-scrollbar-thumb {
   background: var(--border);
-  border-radius: 3px;
-  transition: background 0.2s ease;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: --alpha(var(--muted-foreground) / 0.5);
+  background: --alpha(var(--muted-foreground) / 0.4);
 }
 
 ::-webkit-scrollbar-corner {

@@ -317,7 +317,7 @@ function PureMultimodalInput({
       />
 
       <PromptInput
-        className="rounded-2xl border border-border/50 bg-card p-3 shadow-sm transition-all duration-200 focus-within:border-primary/30 focus-within:shadow-md focus-within:shadow-primary/5 hover:border-muted-foreground/30"
+        className="rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-200 focus-within:border-primary/30 focus-within:shadow-md focus-within:shadow-primary/5 hover:border-muted-foreground/30"
         onSubmit={(event) => {
           event.preventDefault();
           if (!input.trim() && attachments.length === 0) {
@@ -394,7 +394,7 @@ function PureMultimodalInput({
             <StopButton setMessages={setMessages} stop={stop} />
           ) : (
             <PromptInputSubmit
-              className="size-8 rounded-full bg-primary text-primary-foreground shadow-sm shadow-primary/20 transition-all duration-200 hover:bg-primary/90 hover:shadow-md hover:shadow-primary/30 disabled:bg-muted disabled:text-muted-foreground disabled:shadow-none"
+              className="size-8 rounded-full bg-primary text-primary-foreground shadow-sm transition-all duration-200 hover:bg-primary/90 disabled:bg-muted disabled:text-muted-foreground"
               data-testid="send-button"
               disabled={!input.trim() || uploadQueue.length > 0}
               status={status}
@@ -478,9 +478,9 @@ function PureModelSelectorCompact({
 
   // Provider display names
   const providerNames: Record<string, string> = {
-    groq: "Groq",
-    cloudflare: "Cloudflare",
-    nebius: "Nebius",
+    groq: "Imoogle Fast",
+    cloudflare: "Imoogle Edge",
+    nebius: "Imoogle Pro",
   };
 
   return (
