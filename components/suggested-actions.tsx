@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {
   BookOpenIcon,
   CodeIcon,
-  LightbulbIcon,
+  GlobeIcon,
   SparklesIcon,
 } from "lucide-react";
 import { memo } from "react";
@@ -21,14 +21,14 @@ type SuggestedActionsProps = {
 
 const suggestions = [
   {
+    icon: GlobeIcon,
+    label: "Search the web",
+    text: "What are the latest developments in AI this week?",
+  },
+  {
     icon: CodeIcon,
     label: "Write code",
     text: "Write a Python script that generates a beautiful fractal pattern using recursion",
-  },
-  {
-    icon: LightbulbIcon,
-    label: "Explain a concept",
-    text: "Explain how neural networks learn, using a simple analogy",
   },
   {
     icon: SparklesIcon,
@@ -37,8 +37,8 @@ const suggestions = [
   },
   {
     icon: BookOpenIcon,
-    label: "Summarize",
-    text: "What are the key differences between REST and GraphQL APIs?",
+    label: "Explain something",
+    text: "Explain how large language models work in simple terms",
   },
 ];
 
@@ -57,7 +57,7 @@ function PureSuggestedActions({ chatId, sendMessage }: SuggestedActionsProps) {
           transition={{ delay: 0.05 * index }}
         >
           <Suggestion
-            className="group h-auto w-full whitespace-normal rounded-xl border border-border/50 bg-card/50 p-3.5 text-left transition-all duration-200 hover:border-primary/30 hover:bg-card"
+            className="group h-auto w-full whitespace-normal rounded-xl border border-border/60 bg-card p-3.5 text-left transition-all duration-200 hover:border-primary/30 hover:bg-card hover:shadow-sm"
             onClick={(text) => {
               window.history.pushState({}, "", `/chat/${chatId}`);
               sendMessage({

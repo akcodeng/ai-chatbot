@@ -8,84 +8,84 @@ export type ChatModel = {
 };
 
 export const chatModels: ChatModel[] = [
-  // Groq Models
+  // Imoogle Fast (Groq) -- lightning-fast inference
   {
     id: "groq/llama-3.3-70b-versatile",
-    name: "Llama 3.3 70B",
+    name: "Imoogle Fast 70B",
     provider: "groq",
-    description: "Fast and powerful, great for complex tasks",
+    description: "Our fastest large model -- ideal for complex tasks",
   },
   {
     id: "groq/llama-3.1-8b-instant",
-    name: "Llama 3.1 8B",
+    name: "Imoogle Flash 8B",
     provider: "groq",
-    description: "Ultra-fast responses for simple tasks",
+    description: "Ultra-fast responses for simple questions",
   },
   {
     id: "groq/mixtral-8x7b-32768",
-    name: "Mixtral 8x7B",
+    name: "Imoogle Mix 8x7B",
     provider: "groq",
-    description: "Strong mixture-of-experts model with 32K context",
+    description: "Strong mixture-of-experts with 32K context",
   },
   {
     id: "groq/gemma2-9b-it",
-    name: "Gemma 2 9B",
+    name: "Imoogle Gemma 9B",
     provider: "groq",
-    description: "Google's efficient open model via Groq",
+    description: "Efficient open model for everyday tasks",
   },
   {
     id: "groq/deepseek-r1-distill-llama-70b",
-    name: "DeepSeek R1 70B",
+    name: "Imoogle Reason 70B",
     provider: "groq",
-    description: "Reasoning model for complex problem solving",
+    description: "Deep reasoning model for complex problems",
   },
-  // Cloudflare Workers AI Models
+  // Imoogle Edge (Cloudflare) -- edge-optimized inference
   {
     id: "cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-    name: "Llama 3.3 70B",
+    name: "Imoogle Edge 70B",
     provider: "cloudflare",
-    description: "Meta's flagship model on Cloudflare edge",
+    description: "Global edge inference with low latency",
   },
   {
     id: "cloudflare/@cf/meta/llama-3.1-8b-instruct",
-    name: "Llama 3.1 8B",
+    name: "Imoogle Edge 8B",
     provider: "cloudflare",
-    description: "Fast edge inference with low latency",
+    description: "Lightweight edge model for quick tasks",
   },
   {
     id: "cloudflare/@cf/mistral/mistral-7b-instruct-v0.1",
-    name: "Mistral 7B",
+    name: "Imoogle Edge Mistral",
     provider: "cloudflare",
-    description: "Efficient model for quick tasks",
+    description: "Compact and efficient edge model",
   },
   {
     id: "cloudflare/@cf/qwen/qwen1.5-14b-chat-awq",
-    name: "Qwen 1.5 14B",
+    name: "Imoogle Edge Qwen",
     provider: "cloudflare",
-    description: "Strong multilingual capabilities",
+    description: "Multilingual edge capabilities",
   },
-  // Nebius AI Studio Models
+  // Imoogle Pro (Nebius) -- high-quality studio inference
   {
     id: "nebius/meta-llama/Meta-Llama-3.1-70B-Instruct",
-    name: "Llama 3.1 70B",
+    name: "Imoogle Pro 70B",
     provider: "nebius",
     description: "High-quality reasoning and generation",
   },
   {
     id: "nebius/meta-llama/Meta-Llama-3.1-8B-Instruct",
-    name: "Llama 3.1 8B",
+    name: "Imoogle Pro 8B",
     provider: "nebius",
     description: "Fast and cost-effective inference",
   },
   {
     id: "nebius/mistralai/Mixtral-8x22B-Instruct-v0.1",
-    name: "Mixtral 8x22B",
+    name: "Imoogle Pro Mix 8x22B",
     provider: "nebius",
     description: "Powerful mixture-of-experts model",
   },
   {
     id: "nebius/Qwen/Qwen2.5-72B-Instruct",
-    name: "Qwen 2.5 72B",
+    name: "Imoogle Pro Qwen 72B",
     provider: "nebius",
     description: "Top-tier multilingual open model",
   },

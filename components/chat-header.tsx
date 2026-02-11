@@ -27,12 +27,12 @@ function PureChatHeader({
   const { width: windowWidth } = useWindowSize();
 
   return (
-    <header className="sticky top-0 z-10 flex items-center gap-2 border-b border-border/50 bg-background/80 px-2 py-2 backdrop-blur-xl md:px-3">
+    <header className="sticky top-0 z-10 flex items-center gap-2 border-b border-border/60 bg-background/90 px-2 py-2 backdrop-blur-md md:px-3">
       <SidebarToggle />
 
       {(!open || windowWidth < 768) && (
         <Button
-          className="order-2 ml-auto h-8 gap-1.5 rounded-lg border-border/50 px-3 text-sm font-medium transition-colors md:order-1 md:ml-0"
+          className="order-2 ml-auto h-8 gap-1.5 rounded-lg border-border/60 px-3 text-sm font-medium transition-colors md:order-1 md:ml-0"
           onClick={() => {
             router.push("/");
             router.refresh();
@@ -53,10 +53,10 @@ function PureChatHeader({
       )}
 
       <div className="order-3 hidden items-center gap-2 md:ml-auto md:flex">
-        <div className="flex items-center gap-1.5 rounded-full border border-border/50 bg-secondary/50 px-3 py-1">
-          <span className="size-1.5 rounded-full bg-primary animate-pulse" />
+        <div className="flex items-center gap-1.5 rounded-full border border-border/60 bg-card px-3 py-1">
+          <span className="size-1.5 rounded-full bg-primary" />
           <span className="text-xs font-medium text-muted-foreground">
-            Multi-Provider AI
+            Imoogle Models
           </span>
         </div>
       </div>

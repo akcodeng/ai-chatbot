@@ -78,16 +78,22 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2}
+                    strokeWidth={1.5}
                     viewBox="0 0 24 24"
                   >
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                    <path d="M2 17l10 5 10-5" />
-                    <path d="M2 12l10 5 10-5" />
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M12 2v4" />
+                    <path d="M12 18v4" />
+                    <path d="m4.93 4.93 2.83 2.83" />
+                    <path d="m16.24 16.24 2.83 2.83" />
+                    <path d="M2 12h4" />
+                    <path d="M18 12h4" />
+                    <path d="m4.93 19.07 2.83-2.83" />
+                    <path d="m16.24 7.76 2.83-2.83" />
                   </svg>
                 </div>
                 <span className="cursor-pointer font-semibold text-base text-foreground tracking-tight">
-                  NexusAI
+                  Imoogle AI
                 </span>
               </Link>
               <div className="flex flex-row gap-0.5">
@@ -134,8 +140,13 @@ export function AppSidebar({ user }: { user: User | undefined }) {
         <SidebarContent>
           <SidebarHistory user={user} />
         </SidebarContent>
-        <SidebarFooter>
+        <SidebarFooter className="gap-1">
           {user && <SidebarUserNav user={user} />}
+          <div className="px-2 pb-1">
+            <p className="text-center text-[10px] leading-relaxed text-muted-foreground/60">
+              Built by Imoogle Technology
+            </p>
+          </div>
         </SidebarFooter>
       </Sidebar>
 

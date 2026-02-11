@@ -51,7 +51,7 @@ export default function Page() {
 
   return (
     <div className="flex h-dvh w-screen items-start justify-center bg-background pt-12 md:items-center md:pt-0">
-      <div className="flex w-full max-w-md flex-col gap-8 overflow-hidden rounded-2xl border border-border/50 bg-card p-8 shadow-xl shadow-primary/5">
+      <div className="flex w-full max-w-md flex-col gap-8 overflow-hidden rounded-2xl border border-border/60 bg-card p-8 shadow-lg">
         <div className="flex flex-col items-center justify-center gap-3 text-center">
           <div className="flex size-12 items-center justify-center rounded-xl bg-primary/10">
             <svg
@@ -60,12 +60,18 @@ export default function Page() {
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
+              strokeWidth={1.5}
               viewBox="0 0 24 24"
             >
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 2v4" />
+              <path d="M12 18v4" />
+              <path d="m4.93 4.93 2.83 2.83" />
+              <path d="m16.24 16.24 2.83 2.83" />
+              <path d="M2 12h4" />
+              <path d="M18 12h4" />
+              <path d="m4.93 19.07 2.83-2.83" />
+              <path d="m16.24 7.76 2.83-2.83" />
             </svg>
           </div>
           <div>
@@ -73,7 +79,7 @@ export default function Page() {
               Create your account
             </h3>
             <p className="mt-1 text-sm text-muted-foreground">
-              Get started with NexusAI for free
+              Get started with Imoogle AI for free
             </p>
           </div>
         </div>
@@ -90,6 +96,9 @@ export default function Page() {
             {" instead."}
           </p>
         </AuthForm>
+        <p className="text-center text-[10px] text-muted-foreground/60">
+          Powered by Imoogle Technology
+        </p>
       </div>
     </div>
   );

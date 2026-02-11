@@ -8,9 +8,9 @@ import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chat.vercel.ai"),
-  title: "NexusAI - Multi-Provider AI Chat",
+  title: "Imoogle AI - Intelligent Chat by Imoogle Technology",
   description:
-    "A premium AI chat experience powered by Groq, Cloudflare Workers AI, and Nebius. Lightning-fast responses with multiple open-source models.",
+    "Experience Imoogle Models -- intelligent, fast AI chat powered by Groq, Cloudflare Workers AI, and Nebius. Built by Imoogle Technology.",
 };
 
 export const viewport = {
@@ -29,8 +29,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
-const LIGHT_THEME_COLOR = "hsl(210 20% 98%)";
-const DARK_THEME_COLOR = "hsl(222 25% 7%)";
+const LIGHT_THEME_COLOR = "hsl(30 25% 97%)";
+const DARK_THEME_COLOR = "hsl(25 15% 8%)";
 const THEME_COLOR_SCRIPT = `\
 (function() {
   var html = document.documentElement;
@@ -57,10 +57,6 @@ export default function RootLayout({
   return (
     <html
       className={`${geist.variable} ${geistMono.variable}`}
-      // `next-themes` injects an extra classname to the body element to avoid
-      // visual flicker before hydration. Hence the `suppressHydrationWarning`
-      // prop is necessary to avoid the React hydration mismatch warning.
-      // https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
       lang="en"
       suppressHydrationWarning
     >
@@ -75,7 +71,7 @@ export default function RootLayout({
       <body className="antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           disableTransitionOnChange
           enableSystem
         >
